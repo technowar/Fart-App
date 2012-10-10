@@ -23,6 +23,9 @@
 		1051FC2A162538D1001B9F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1051FC05162538D1001B9F7C /* Foundation.framework */; };
 		1051FC32162538D1001B9F7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1051FC30162538D1001B9F7C /* InfoPlist.strings */; };
 		1051FC35162538D1001B9F7C /* Fart_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1051FC34162538D1001B9F7C /* Fart_AppTests.m */; };
+		1051FC4016253915001B9F7C /* Fart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051FC3E16253915001B9F7C /* Fart.mp3 */; };
+		1051FC4116253915001B9F7C /* Fart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1051FC3F16253915001B9F7C /* Fart.png */; };
+		1051FC431625398C001B9F7C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1051FC421625398C001B9F7C /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		1051FC31162538D1001B9F7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1051FC33162538D1001B9F7C /* Fart_AppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fart_AppTests.h; sourceTree = "<group>"; };
 		1051FC34162538D1001B9F7C /* Fart_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fart_AppTests.m; sourceTree = "<group>"; };
+		1051FC3E16253915001B9F7C /* Fart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fart.mp3; sourceTree = "<group>"; };
+		1051FC3F16253915001B9F7C /* Fart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fart.png; sourceTree = "<group>"; };
+		1051FC421625398C001B9F7C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1051FC431625398C001B9F7C /* AudioToolbox.framework in Frameworks */,
 				1051FC04162538D1001B9F7C /* UIKit.framework in Frameworks */,
 				1051FC06162538D1001B9F7C /* Foundation.framework in Frameworks */,
 				1051FC08162538D1001B9F7C /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +113,7 @@
 		1051FC02162538D1001B9F7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1051FC421625398C001B9F7C /* AudioToolbox.framework */,
 				1051FC03162538D1001B9F7C /* UIKit.framework */,
 				1051FC05162538D1001B9F7C /* Foundation.framework */,
 				1051FC07162538D1001B9F7C /* CoreGraphics.framework */,
@@ -130,6 +138,8 @@
 		1051FC0A162538D1001B9F7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1051FC3E16253915001B9F7C /* Fart.mp3 */,
+				1051FC3F16253915001B9F7C /* Fart.png */,
 				1051FC0B162538D1001B9F7C /* Fart App-Info.plist */,
 				1051FC0C162538D1001B9F7C /* InfoPlist.strings */,
 				1051FC0F162538D1001B9F7C /* main.m */,
@@ -236,6 +246,8 @@
 				1051FC18162538D1001B9F7C /* Default@2x.png in Resources */,
 				1051FC1A162538D1001B9F7C /* Default-568h@2x.png in Resources */,
 				1051FC20162538D1001B9F7C /* ViewController.xib in Resources */,
+				1051FC4016253915001B9F7C /* Fart.mp3 in Resources */,
+				1051FC4116253915001B9F7C /* Fart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,7 @@
 				1051FC3A162538D1001B9F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1051FC3B162538D1001B9F7C /* Build configuration list for PBXNativeTarget "Fart AppTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +468,7 @@
 				1051FC3D162538D1001B9F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

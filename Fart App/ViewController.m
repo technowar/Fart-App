@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 OSX. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
+
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -24,6 +26,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)fartButton:(id)sender
+{
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef soundFileURL;
+    soundFileURL = CFBundleCopyResourceURL(mainBundle, (CFStringRef) @"Fart", CFSTR ("mp3"), NULL);
+    UInt32 soundID;
+    AudioServicesCreateSystemSoundID (soundFileURL, &soundID);
+    AudioServicesPlaySystemSound (soundID);
 }
 
 @end

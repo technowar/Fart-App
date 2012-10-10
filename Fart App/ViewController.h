@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)fartButton:(id)sender;
+
 @end
